@@ -7,17 +7,24 @@
   <title>Number Guesser</title>
 </head>
 <body>
+
   <div class="topTitle"> 
     <h1>Guess The Number</h1>
   </div>
+
   <div class="middleContainer">
-    <span class="stepOne">Objective: Find the random number between 1 - 100 </span>
-    <span class="stepTwo">Submit Your Guess Below: You Only Have 12 Guesses</span>  
+    <span class="stepOne">Objective: Find The Random Number Between 1 - 100 </span>
+    <span class="stepTwo">Submit Your Guess Below: You Only Have <b>12</b> Guesses</span>  
   </div>
-  <form class="inputForm">
-    Input A Number: <input class="inputBox" placeholder="(1-100)" type="text" name="number">
-    <input type="button" class ="submitbtn" onClick="GuessNumber()" value="Submit">
+
+  <form class="inputForm">Input A Number: <input type="text" class="guessInput" placeholder="(1-100)">
+    <input type="button" class="submitbtn" onclick="checkGuess()" value="Submit">
   </form>
+
+  <div class ="status">
+  <span>Status:</span> 
+  <output class="status_output">You Must First Submit A Guess Above</output>
+  </div>
   
 <script src="guessNumber.js" type="text/javascript"></script>
 </body>
